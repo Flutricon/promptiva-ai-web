@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Promptiva AI</title>
+
+  <!-- SEO -->
+  <title>Promptiva AI - AI Prompt Generator App</title>
+  <meta name="description" content="Generate powerful AI prompts instantly with Promptiva AI. Create stunning visuals, explore trending prompts, and boost creativity.">
 
   <style>
     body {
@@ -22,13 +25,42 @@
 
     h1 {
       color: #6C63FF;
-      font-size: 40px;
+      font-size: 42px;
       margin-bottom: 10px;
     }
 
-    p {
+    .subtitle {
       color: #555;
       font-size: 18px;
+      margin-bottom: 25px;
+    }
+
+    .highlight {
+      color: #6C63FF;
+      font-weight: bold;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      padding: 14px 22px;
+      margin: 10px;
+      background: #6C63FF;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .cta-btn.secondary {
+      background: white;
+      color: #6C63FF;
+      border: 2px solid #6C63FF;
+    }
+
+    .cta-btn:hover {
+      background: #5548e6;
+      color: white;
     }
 
     .card {
@@ -37,76 +69,138 @@
       margin-top: 30px;
       border-radius: 12px;
       box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+      text-align: left;
     }
 
-    a {
-      display: block;
-      padding: 14px;
-      margin: 10px 0;
+    .card h2 {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    .features li {
+      margin-bottom: 10px;
+    }
+
+    .legal-links {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .legal-links a {
+      padding: 12px;
       background: #6C63FF;
       color: white;
       text-decoration: none;
       border-radius: 8px;
+      text-align: center;
       font-weight: bold;
     }
 
-    a:hover {
+    .legal-links a:hover {
       background: #5548e6;
     }
 
     .ads-info {
-      text-align: left;
-      margin-top: 20px;
+      margin-top: 15px;
       color: #444;
       font-size: 15px;
       line-height: 1.6;
     }
 
     .ads-info a {
-      display: inline;
-      background: none;
       color: #6C63FF;
-      padding: 0;
-      margin: 0;
-      font-weight: normal;
+      text-decoration: none;
     }
 
     .footer {
       margin-top: 40px;
       font-size: 14px;
       color: #777;
+      text-align: center;
     }
+
   </style>
 </head>
 
 <body>
+
   <div class="container">
-    
+
+    <!-- HEADER -->
     <h1>Promptiva AI</h1>
 
-    <p>
-      Discover powerful AI prompts to transform your photos into stunning artwork.
+    <p class="subtitle">
+      Transform your ideas into <span class="highlight">stunning AI visuals</span> using powerful prompts.
     </p>
 
-    <!-- Legal Section -->
-    <div class="card">
-      <h2>Legal Information</h2>
-      <a href="privacy/">Privacy Policy</a>
-      <a href="terms/">Terms & Conditions</a>
-      <a href="about/">About Us</a>
+    <!-- CTA -->
+    <a href="https://play.google.com/store/apps/details?id=com.promptiva.aiprompt.generator" 
+       target="_blank" class="cta-btn">
+       📲 Download App
+    </a>
+
+    <a href="#features" class="cta-btn secondary">
+      Explore Features
+    </a>
+
+    <!-- FEATURES -->
+    <div id="features" class="card">
+      <h2>✨ What You Can Do</h2>
+
+      <ul class="features">
+        <li>🎨 Generate AI image prompts instantly</li>
+        <li>🔥 Explore trending & viral prompt ideas</li>
+        <li>📂 Browse categories like DP Maker, Kids, Cinematic</li>
+        <li>⚡ Copy & share prompts in one click</li>
+        <li>🚀 Create professional-level AI outputs easily</li>
+      </ul>
     </div>
 
-    <!-- Ads Disclosure -->
+    <!-- WHY -->
     <div class="card">
-      <h2>Advertising & Monetization</h2>
+      <h2>🚀 Why Choose Promptiva AI</h2>
+
+      <ul class="features">
+        <li>✔ Clean & user-friendly interface</li>
+        <li>✔ High-quality curated prompts</li>
+        <li>✔ Regular updates & trending content</li>
+        <li>✔ Fast and lightweight experience</li>
+        <li>✔ 100% free to use</li>
+      </ul>
+    </div>
+
+    <!-- LEGAL -->
+    <div class="card">
+      <h2>📄 Legal & Information</h2>
+
+      <div class="legal-links">
+        <a href="https://flutricon.github.io/promptiva-ai-web/privacy" target="_blank">
+          Privacy Policy
+        </a>
+
+        <a href="https://flutricon.github.io/promptiva-ai-web/terms" target="_blank">
+          Terms & Conditions
+        </a>
+
+        <a href="https://flutricon.github.io/promptiva-ai-web/about" target="_blank">
+          About Us
+        </a>
+      </div>
+    </div>
+
+    <!-- ADS -->
+    <div class="card">
+      <h2>📢 Advertising & Monetization</h2>
 
       <div class="ads-info">
         <p>
-          Promptiva AI is a free application supported by advertisements.
+          Promptiva AI is a free app supported by ads to keep the platform running and continuously improving.
         </p>
 
         <p>
-          We use <strong>Google AdMob</strong> to display ads. AdMob may collect and use data such as:
+          We use <strong>Google AdMob</strong> to display advertisements. These ads may use:
         </p>
 
         <ul>
@@ -116,14 +210,10 @@
         </ul>
 
         <p>
-          This data helps provide relevant and personalized ads to users.
-        </p>
-
-        <p>
-          Learn more about how Google handles data here:
+          Learn more:
           <br>
           <a href="https://policies.google.com/privacy" target="_blank">
-            https://policies.google.com/privacy
+            Google Privacy Policy
           </a>
         </p>
       </div>
@@ -134,5 +224,6 @@
     </div>
 
   </div>
+
 </body>
 </html>
